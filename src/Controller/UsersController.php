@@ -77,22 +77,13 @@ class UsersController extends AppController
 
 	public function changeLanguage($language)
 	{
-			# sadik hallo
 		$supportedLanguages = ['de_DE', 'en_US', 'es_ES'];
-			# sadik hallo
 		if (in_array($language, $supportedLanguages)){
-
-			# hallo dies das
 			$this->request->session()->write('I18n.Locale', $language);
-			# hallo dies das 2
 			return $this->redirect($this->referer());
-			# sadik hallo
 		}else{
-			# sadik hallo
 			$this->Flash->error(__('Die Sprache ist nicht verfügbar'));
-			# sadik hallo
 			return $this->redirect($this->referer());
-			# hallo dies das 5
 		}
 	}
 }

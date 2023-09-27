@@ -5,10 +5,7 @@
 /logs/*
 /tmp/*
 /vendor/*
-/webroot/*
-!webroot/css/
-!webroot/js/
-!webroot/font/
+/webroot/img/*
 
 # OS generated files #
 ######################

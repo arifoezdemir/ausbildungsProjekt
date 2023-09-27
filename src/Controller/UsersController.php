@@ -81,9 +81,10 @@ class UsersController extends AppController
 		$supportedLanguages = ['de_DE', 'en_US', 'es_ES'];
 			# sadik hallo
 		if (in_array($language, $supportedLanguages)){
-			# sadik hallo
+
+			# hallo dies das
 			$this->request->session()->write('I18n.Locale', $language);
-			# sadik hallo
+			# hallo dies das 2
 			return $this->redirect($this->referer());
 			# sadik hallo
 		}else{
@@ -91,6 +92,7 @@ class UsersController extends AppController
 			$this->Flash->error(__('Die Sprache ist nicht verfügbar'));
 			# sadik hallo
 			return $this->redirect($this->referer());
+			# hallo dies das 5
 		}
 	}
 }
